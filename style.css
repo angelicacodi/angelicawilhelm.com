@@ -1,0 +1,182 @@
+:root {
+    --btn-border-light: 2px solid white;
+    --btn-border-dark: 2px solid #222;
+}
+
+body {
+    font-family: 'MS Sans Serif', Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    margin: 0px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.window {
+    background: silver;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    margin: 5px;
+}
+
+.window-title-bar {
+    background: navy;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    background-color: #008080;
+    width: 100%;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profile .window img {
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.profile .window {
+    max-width: 400px;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-right img {
+    min-width: 500px;
+}
+
+.button {
+    background: silver;
+    border-top: var(--btn-border-light);
+    border-left: var(--btn-border-light);
+    border-right: var(--btn-border-dark);
+    border-bottom: var(--btn-border-dark);
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:active {
+    border-top: var(--btn-border-dark);
+    border-left: var(--btn-border-dark);
+    border-right: var(--btn-border-light);
+    border-bottom: var(--btn-border-light);
+}
+
+.window-title-bar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: silver;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    color: black;
+    padding: 2px;
+}
+
+.title-bar {
+    height: 40px;
+    background: silver;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.start-button {
+    background: silver;
+    border: 2px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 5PX;
+    background: silver;
+    border: 2px solid black;
+    width: 150px;
+    box-shadow: 4px 4px black;
+}
+
+.dropdown-menu div {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu div:hover {
+    background: gray;
+}
+
+.window-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.window-content .button {
+    max-width: 200px;
+    align-self: center;
+}
+
+#go-back-btn {
+    align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .window {
+        margin: 5px 15px;
+    }
+
+    .profile-right img {
+        min-width: unset;
+    }
+}
+
+.modal {
+    position: fixed;
+    background: #00000062;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

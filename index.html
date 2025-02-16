@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelica Wilhelm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title-bar">
+            <div class="button" onclick="toggleMenu()">Menu
+                <div id="start-menu" class="dropdown-menu">
+                    <a href="under-construction.html">
+                        <div>About Me</div>
+                    </a>
+                    <a href="under-construction.html">
+                        <div>Projects</div>
+                    </a>
+                    <a href="under-construction.html">
+                        <div>Settings</div>
+                    </a>
+                    <a href="under-construction.html">
+                        <div>Shut Down</div>
+                    </a>
+                </div>
+            </div>
+            <a href="bad.html">
+                <div class="button">DO NOT PRESS</div>
+            </a>
+        </div>
+        <div class="content">
+            <div class="profile">
+                <div class="window">
+                    <div class="window-title-bar">
+                        <span>Me</span>
+                        <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
+                    </div>
+                    <div class="window-content">
+                        <img src="angelica_grindlewald.webp" alt="Angelica Wilhelm">
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <img src="aw.svg" alt="Angelica Wilhelm name">
+                    <div class="window">
+                        <div class="window-title-bar">
+                            <span>About me</span>
+                            <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
+                        </div>
+                        <div class="window-content">
+                            Just a girl, trying to make a website...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="window">
+                <div class="window-title-bar">
+                    <span>Caution!</span>
+                    <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
+                </div>
+                <div class="window-content">
+                    <p>Website currently under construction</p>
+                    <div class="button">This does literally nothing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="no-close-modal">
+        <div class="modal-content">
+            <div class="window">
+                <div class="window-title-bar">
+                    <span>Error</span>
+                    <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
+                </div>
+                <div class="window-content">
+                    <p>No, you can't close that. This is my website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

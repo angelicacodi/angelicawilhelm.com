@@ -10,9 +10,11 @@ body {
     margin: 0px;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
     color: inherit;
+    
 }
 
 .main {
@@ -161,14 +163,9 @@ a, a:visited {
     align-self: center;
 }
 
-@media only screen and (max-width: 600px) {
-    .window {
-        margin: 5px 15px;
-    }
-
-    .profile-right img {
-        min-width: unset;
-    }
+#about-me-window {
+    width: 60%;
+    max-width: 1000px;
 }
 
 .modal {
@@ -179,4 +176,19 @@ a, a:visited {
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+/* for mobile styling */
+@media (width <= 600px) {
+    .window {
+        margin: 5px 15px;
+    }
+
+    .profile-right img {
+        min-width: unset;
+    }
+
+    #about-me-window {
+        width: 90%;
+    }
 }

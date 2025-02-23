@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angelica Wilhelm</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div class="title-bar">
             <div class="button" onclick="toggleMenu()">Menu
                 <div id="start-menu" class="dropdown-menu">
-                    <a href="about-me.html">
+                    <a href="/">
                         <div>About Me</div>
                     </a>
                     <a href="projects.html">
@@ -39,31 +40,56 @@
                         <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
                     </div>
                     <div class="window-content">
-                        <img src="assests/angelica_grindlewald.webp" alt="Angelica Wilhelm">
+                        <img src="assets/angelica_grindlewald.webp" alt="Angelica Wilhelm">
                     </div>
                 </div>
                 <div class="profile-right">
-                    <img src="assests/aw.svg" alt="Angelica Wilhelm name">
-                    <div class="window">
+                    <img src="assets/aw.svg" alt="Angelica Wilhelm name">
+
+                    <div class="window" id="about-me-window">
                         <div class="window-title-bar">
-                            <span>About me</span>
+                            <span>About Me</span>
                             <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
                         </div>
                         <div class="window-content">
-                            <p>Just a girl, trying to make a website...</p>
-                            <div class="button" onclick="gotoPage('/about-me.html')">Learn more</div>
+                            <p>Hello!</p>
+                            <p>
+                                I'm Angelica, a graduate student at Virginia Tech, pursuing a Master of Science in
+                                Business
+                                Administration with a concentration in Business Analytics.
+                            </p>
+                            <p>
+                                I have been a Clinical Laboratory Scientist since 2016,
+                                largely driven by a desire to make a meaningful impact in this world.
+                                As I advanced my career into Laboratory Supervisor and later Laboratory Director,
+                                I witnessed firsthand the inefficiencies, poor communication, and lack of analytics in
+                                operations.
+                                Realizing the potential to make an even greater impact, I pivoted to business analytics
+                                to help organizations across industries make smarter, data-driven decisions and solve
+                                complex challenges.
+                            <p>
+                                I am also a DIY enthusiast who enjoys dabbling in various hobbies, so I created this
+                                website as a
+                                place to house my side projects, showcase my interests, and document my journey in
+                                analytics and
+                                beyond.
+                            </p>
+                            <p>
+                                Thanks for stopping by!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="window">
                 <div class="window-title-bar">
-                    <span>Caution!</span>
+                    <span>Connect</span>
                     <div class="button window-title-bar-button" onclick="noCloseModalToggle()">X</div>
                 </div>
-                <div class="window-content">
-                    <p>Website currently under construction</p>
-                    <div class="button">This does literally nothing</div>
+                <div class="window-content connect-icons">
+                   <a href="https://www.linkedin.com/in/angelica-wilhelm-773045245/"> <img src="assets/linkedin.png" alt="linkedin"> </a>
+                    <a href="https://github.com/angelicacodi"><img src="assets/github.png" alt="github"> </a>
+                    <img src="assets/email.png" alt="email">
                 </div>
             </div>
         </div>

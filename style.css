@@ -64,7 +64,7 @@ a:visited {
 }
 
 .profile .window {
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .profile-right {
@@ -75,7 +75,7 @@ a:visited {
 }
 
 .profile-right img {
-    min-width: 500px;
+    max-width: 500px;
 }
 
 .button {
@@ -164,8 +164,8 @@ a:visited {
 }
 
 #about-me-window {
-    width: 60%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 600px;
 }
 
 .modal {
@@ -176,6 +176,18 @@ a:visited {
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+.connect-icons {
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.connect-icons img {
+    height: 60px;
+    width: 60px;
 }
 
 /* for mobile styling */
